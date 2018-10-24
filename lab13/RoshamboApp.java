@@ -15,16 +15,16 @@ public class RoshamboApp {
  		System.out.print("Please enter your name: ");
  		
  		String userName = scnr.nextLine();
-		UserPlayer player = new UserPlayer(name);
+		HumanPlayer player = new HumanPlayer(name);
 		
  		System.out.print("Would you like to play against Mike or Some Idiot? (m/s)");
  		String opponent = scnr.nextLine();
 	
 		
 		if (opponent.equalsIgnoreCase("m")){
- 			opponent2 = new Mike("Mike");
+ 			opponent2 = new Jack("Mike");
  		} else if (opponent.equalsIgnoreCase("s")){
- 			opponent2 = new SomeIdiot("Some Idiot");
+ 			opponent2 = new SomeIdiot("some idiot");
  		}
 		
 		String rpc2 = opponent2.generateRoshambo();
